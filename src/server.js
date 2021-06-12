@@ -2,11 +2,6 @@
 require('./database/database');
 
 const express = require('express');
-const path = require('path');
-const handlebars = require('handlebars');
-const exphbs = require('express-handlebars');
-const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
-const bodyParser = require('body-parser');
 
 const app = express();
 app.use(express.json());
@@ -29,4 +24,3 @@ const server = app.listen(PORT, () => {
     console.log(`Failure`)
   }
 })
-// app.use('/supplier', supplierController);
