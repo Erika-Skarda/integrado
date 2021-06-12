@@ -29,4 +29,3 @@ const server = app.listen(PORT, () => {
     console.log(`Failure`)
   }
 })
-// app.use('/supplier', supplierController);

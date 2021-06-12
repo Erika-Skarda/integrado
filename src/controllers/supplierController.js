@@ -67,4 +67,3 @@ exports.deleteSupplier = async function (req, res) {
     }
 };
 
-
