@@ -8,9 +8,6 @@ const exphbs = require('express-handlebars');
 const { allowInsecurePrototypeAccess } = require('@handlebars/allow-prototype-access');
 const bodyParser = require('body-parser');
 
-
-// const supplierController = require('./controllers/supplierController');
-
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({
@@ -18,10 +15,10 @@ app.use(express.urlencoded({
 }));
 
 const supplierRouter = require('./routes/supplierRouter');
-// const postRouter = require('./Views/posts');
+const productRouter = require('./routes/productRouter');
 
 app.use('/supplier', supplierRouter);
-// app.use('/api', postRouter);
+app.use('/product', productRouter);
 
 const PORT = process.env.PORT || 3000;
 
@@ -32,4 +29,3 @@ const server = app.listen(PORT, () => {
     console.log(`Failure`)
   }
 })
-// app.use('/supplier', supplierController);

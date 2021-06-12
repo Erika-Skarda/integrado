@@ -3,23 +3,20 @@ const _ = require('lodash');
 const Pattern = require('../utils/pattern');
 const createError = require("http-errors");
 const SupplierModel = require('../models/supplier.model');
-const { cnpj, validator } = require('cpf-cnpj-validator');
-const Joi = require('@hapi/joi').extend(validator);
-
-const cnpjSchema = Joi.document().cnpj();
 
 exports.createOrUpdateSupplier = async function (req, res) {
   
   let supplier = new SupplierModel();
   supplier.name = req.body.name;
-  supplier.cnpj = Pattern.validateCNPJ(req.body.cnpj);
+  supplier.cnpj = await Pattern.validateCNPJ(req.body.cnpj);
 
+  console.log(supplier.cnpj )
   if(!req.body.id) {
     await supplier.save((supplier) => {
       try {
-        res.status(201).send({ message: `Supplier saved successfully ✨` });
+        res.status(201).send({ message: `Supplier ${supplier.name} saved successfully ✨` });
       } catch(err) {
-        throw createError(400, err.message );
+        throw createError(400, err.message);
       }
     });
   } else {
@@ -29,9 +26,9 @@ exports.createOrUpdateSupplier = async function (req, res) {
         { new: true },
         (err, doc) => {
           if(!err) {  
-            res.status(201).send({ message: `Supplier CNPJ updated to 🟣 ${req.body.cnpj} 🟣 successfully` });
+            res.status(201).send({ message: `Supplier CNPJ updated to 🎉 ${req.body.cnpj} 🎉 successfully` });
           } else {
-            console.log('Error during updateRecord: ' + err);
+            console.log('Error during updateCNPJ: ' + err);
           }
         }
       );
@@ -43,7 +40,7 @@ exports.createOrUpdateSupplier = async function (req, res) {
           if(!err) {  
             res.status(201).send({ message: `Supplier name updated to ${req.body.name} successfully ✨` });
           } else {
-            console.log('Error during updateRecord: ' + err);
+            console.log('Error during updateName ' + err);
           }
         }
       );
@@ -64,10 +61,9 @@ exports.getSupplierById = async function (req, res) {
 exports.deleteSupplier = async function (req, res) {
   await SupplierModel.deleteOne({ _id: req.params.id }) 
     try {
-      res.status(201).send({ message: `Supplier has been removed successfully ✨` });
+      res.status(201).send({ message: `Supplier has been removed successfully 🎈` });
     } catch(err) {
       throw createError(400, err.message );
     }
 };
-
 

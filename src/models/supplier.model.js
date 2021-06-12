@@ -14,14 +14,14 @@ const supplierSchema = new Schema({
     required: 'This field is required', 
     unique: true
   },
-//   products: [
-//     {
-//       type: Schema.Types.ObjectId,
-//       ref: 'Product',
-//     },
-//   ],
-// }, {
-//   usePushEach: true,
+  products: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Product',
+    },
+  ],
+}, {
+  usePushEach: true,
 });
 
 module.exports = mongoose.model('Supplier', supplierSchema);

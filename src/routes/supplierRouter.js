@@ -2,7 +2,6 @@ const supplierRouter = require('express').Router();
 
 const supplierController = require('../controllers/supplierController');
 
-
 supplierRouter.post('', supplierController.createOrUpdateSupplier);
 
 supplierRouter.get('/:id', supplierController.getSupplierById);
