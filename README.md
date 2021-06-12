@@ -6,6 +6,7 @@ API criada em NodeJs e o banco não-relacional MongoDB.
 
 <div align="center">
  <img alt="NodeJS" src="https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node-dot-js&logoColor=white"/>
+ <img alt="Express.js" src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"/>
  <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
  <img alt="MongoDB" src ="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"/>
 </div>
@@ -38,55 +39,27 @@ API com CRUD de fornecedores(supplier) e CRUD de produtos(products).
 
 <h3 align="center"><b>Produtos</b></h3>
 
-💰 <b>Cadastro de produto</b>
+🥑 <b>Cadastro de produto</b>
 
-💰 <b>Listar todas categorias</b>
+🥑 <b>Listar todos produtos</b>
 
-💰 <b>Remover categoria</b>
+🥑 <b>Remover produto</b>
 
-💰 <b>Pegar categoria com código</b>
+🥑 <b>Pegar produto pelo ID</b>
 
-## Frontend
-
-<p align="center"><b>Cadastro de Investimento</b></p>
- 
-![Cadastro](https://github.com/Erika-Skarda/my-invest/blob/main/frontend/src/assets/fullstackweek1.png)
-
-<p align="center"><b>Lista de Investimentos</b></p>
- 
-![Listagem](https://github.com/Erika-Skarda/my-invest/blob/main/frontend/src/assets/fullstackweek2.png)
+🥑 <b>Pegar produto pelo CNPJ</b>
 
 ## Como rodar a aplicação :arrow_forward:
 
 No terminal, clone o projeto: 
 
 ```
-git clone https://github.com/Erika-Skarda/my-invest
-
-```
-<b><p>Frontend</p></b>
-
-Acesse a pasta frontend:
-
-```
-cd frontend
-
-```
-Entre no projeto e instale as dependências através do comando:
-
-```
-npm install
-
-```
-Por último, suba a aplicação: 
-
-```
-npm start
+https://github.com/Erika-Skarda/integrado
 
 ```
 <b><p>Backend</p></b>
 
-Acesse a pasta backend(utilizei Eclipse):
+Acesse a pasta backend:
 
 ```
 cd backend
@@ -103,30 +76,17 @@ Run as Spring App
 
 ### Backend: 
 
-- [Java](https://www.java.com/en/)
-- [Spring Boot](https://spring.io/projects/spring-boot)
-- [Maeven](https://maven.apache.org/what-is-maven.html)
-- [JPA/Hibernate](https://www.oracle.com/java/technologies/persistence-jsp.html)
-
-
-### Frontend:
-
-- [React](https://reactjs.org)
-- [Javascrit](https://www.javascript.com/)
-- [AntDesign](https://ant.design/)
-
+- [Javascript](https://www.javascript.com/)
+- [NodeJs](https://nodejs.org/en/download)
+- [Express](https://expressjs.com/)
 
 ### Banco de dados:
 
-- [PostgresSQL](https://www.postgresql.org/)
+- [MongoDB](https://www.mongodb.com/)
 
 ## Pré-requisitos
 
-:warning: [JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
-
-:warning: [Spring Tools](https://www.jetbrains.com/idea/download/?gclid=CjwKCAjwqvyFBhB7EiwAER786fqaEzrR0uEbJEpc3_KWj71Wflv1SBHVo4YAjwkQGAWDzwp243zR9hoCEAYQAvD_BwE)
-
-:warning: [PostgresSQL](https://www.postgresql.org/)
+:warning: [MongoDB](https://www.mongodb.com/)
 
 :warning: [Node](https://nodejs.org/en/download/)
 
