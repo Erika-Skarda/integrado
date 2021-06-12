@@ -23,6 +23,12 @@ API criada em NodeJs e o banco não-relacional MongoDB.
 
 API com CRUD de fornecedores(supplier) e CRUD de produtos(products).
 
+## 🚀 Ux e instruções:
+
+[Github](https://github.com/edusynch/frontend-challenge) :octocat:
+</br>
+[Figma](https://www.figma.com/file/vxbTpBRViZn0dY5EnjlVMZ/Eduick?node-id=97%3A0
+
 ## Backend(Funcionalidades):
 
 <h3 align="center"><b>Fornecedores</b></h3>
