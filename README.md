@@ -55,7 +55,7 @@ API com CRUD de fornecedores(supplier) e CRUD de produtos(products).
 
 🥑 <b>Pegar produto pelo CNPJ</b>
  
-![Tela no MongoDB da collection dos fornecedores](https://github.com/Erika-Skarda/integrado/blob/main/Product.png)
+![Tela no MongoDB da collection dos fornecedores](https://github.com/Erika-Skarda/integrado/blob/main/Products.png)
 
 ## Como rodar a aplicação :arrow_forward:
 
