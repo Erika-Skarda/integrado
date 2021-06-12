@@ -1,4 +1,3 @@
-
 require('./database/database');
 
 const express = require('express');
@@ -24,3 +23,4 @@ const server = app.listen(PORT, () => {
     console.log(`Failure`)
   }
 })
+

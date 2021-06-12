@@ -1,4 +1,3 @@
-
 const { cnpj, validator } = require('cpf-cnpj-validator');
 const Joi = require('@hapi/joi').extend(validator);
 
