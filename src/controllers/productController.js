@@ -31,6 +31,7 @@ exports.createOrUpdateProduct = async function (req, res) {
         if(err) {
           throw createError(400, err.message);
         }
+        console.log(foundSupplier)
         // return res.json(savedSupplier);    
       });
       res.status(201).send({ message: `Product ${newProduct.name} saved successfully 🌟` });
@@ -71,6 +72,25 @@ exports.getProductById = async function (req, res) {
     } catch(err) {
       throw createError(400, err.message );
     }
+};
+
+exports.getProducts = async function (req, res) {
+  let response = await ProductModel.find({})
+    try {
+      res.status(200).send({ Products: response})
+    } catch(err) {
+      throw createError(400, err.message );
+    }
+};
+
+exports.getProductsByCNPJ = async function (req, res) {
+  const supplierCNPJ = await Pattern.validateCNPJ(req.params.supplierCNPJ);
+  await ProductModel.find({ supplierCNPJ: supplierCNPJ }, async (err, foundSupplier) => {
+    if(!foundSupplier) {
+      throw createError(404, err.message );
+    };
+    res.status(200).send({ foundSupplier });
+  })
 };
 
 exports.deleteProduct = async function (req, res) {

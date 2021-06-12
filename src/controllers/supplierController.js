@@ -14,7 +14,7 @@ exports.createOrUpdateSupplier = async function (req, res) {
   if(!req.body.id) {
     await supplier.save((supplier) => {
       try {
-        res.status(201).send({ message: `Supplier ${supplier.name} saved successfully ✨` });
+        res.status(201).send({ message: `Supplier ${supplier.name} saved successfully 🎈` });
       } catch(err) {
         throw createError(400, err.message);
       }
@@ -53,6 +53,18 @@ exports.getSupplierById = async function (req, res) {
   let response = await SupplierModel.findById(id) 
     try {
       res.status(200).send({ Supplier: response})
+    } catch(err) {
+      throw createError(400, err.message );
+    }
+};
+
+exports.getSuppliers = async function (req, res) {
+  let response = await SupplierModel.find({})
+    try {
+      res.status(200).send({ Suppliers: response });
+      res.render('supplierAndProducts/list', {
+        list: response
+      })
     } catch(err) {
       throw createError(400, err.message );
     }
