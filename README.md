@@ -59,16 +59,16 @@ https://github.com/Erika-Skarda/integrado
 ```
 <b><p>Backend</p></b>
 
-Acesse a pasta backend:
-
-```
-cd backend
-
-```
 Para rodar:
 
 ```
-Run as Spring App
+npm run dev
+
+```
+<b><p>MongoDB</p></b>
+
+```
+Criar database IntegradoDB
 
 ```
 
