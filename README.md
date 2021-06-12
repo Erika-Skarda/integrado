@@ -29,11 +29,6 @@ API com CRUD de fornecedores(supplier) e CRUD de produtos(products).
 
 ## Backend(Funcionalidades):
 
-
-<p align="center"><b>Lista de Investimentos</b></p>
- 
-![Listagem](https://github.com/Erika-Skarda/my-invest/blob/main/frontend/src/assets/fullstackweek2.png)
-
 <h3 align="center"><b>Fornecedores</b></h3>
 
 🙆‍♀️ <b>Cadastro de fornecedor</b>
@@ -45,10 +40,8 @@ API com CRUD de fornecedores(supplier) e CRUD de produtos(products).
 🙆‍♀️ <b>Pegar fornecedor pelo ID</b>
 
 🙆‍♀️ <b>Edição do fornecedor</b>
-
-<p align="center"><b>Fornecedores</b></p>
  
-![Tela no MongoDB da collection dos fornecedores](https://github.com/Erika-Skarda/my-invest/blob/main/frontend/src/assets/fullstackweek1.png)
+![Tela no MongoDB da collection dos fornecedores](https://github.com/Erika-Skarda/integrado/blob/main/Supplier.png)
 
 <h3 align="center"><b>Produtos</b></h3>
 
@@ -61,6 +54,8 @@ API com CRUD de fornecedores(supplier) e CRUD de produtos(products).
 🥑 <b>Pegar produto pelo ID</b>
 
 🥑 <b>Pegar produto pelo CNPJ</b>
+ 
+![Tela no MongoDB da collection dos fornecedores](https://github.com/Erika-Skarda/integrado/blob/main/Product.png)
 
 ## Como rodar a aplicação :arrow_forward:
 
