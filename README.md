@@ -25,7 +25,7 @@ API com CRUD de fornecedores(supplier) e CRUD de produtos(products).
 
 ## 🚀 Instruções:
 
-[PDF](https://github.com/Erika-Skarda/integrado/blob/main/Teste-Backend.pdf)
+<b>[PDF](https://github.com/Erika-Skarda/integrado/blob/main/Teste-Backend.pdf)</b>
 
 ## Backend(Funcionalidades):
 
